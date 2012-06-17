@@ -1,0 +1,45 @@
+
+To generate a project run:
+
+mvn archetype:generate \
+  -DarchetypeGroupId=org.unchiujar.android \
+  -DarchetypeArtifactId=android-template-archetype \
+  -DarchetypeVersion=0.0.1-SNAPSHOT \
+  -DgroupId=<the project groupid> \
+  -DartifactId=<the project artifactId> \
+  -Dversion=<the project version number start> \
+  -DtargetSdkVersion=<Android Target SDK version> \
+  -DminSdkVersion=<Android Minimum SDK version> \
+  -DplatformVersion=<The Android Release version> 
+
+
+There is an equivalence between the targeSdkVersion and the platformVersion
+
+minSdkVersion OR 
+targetSdkVersion    |    platformVersion
+----------------------------------------
+      3                    1.5_r4
+      4                    1.6_r3
+      7                    2.1_r3
+      8                    2.2_r3
+      10                   2.3.3_r2
+      11                   3.0_r2
+      12                   3.1_r3
+      13                   3.2_r1
+      14                   4.0_r3
+      15                   4.0.3_r3
+
+
+
+Example:
+
+mvn archetype:generate \
+  -DarchetypeGroupId=org.unchiujar.android \
+  -DarchetypeArtifactId=android-template-archetype \
+  -DarchetypeVersion=0.0.1-SNAPSHOT \
+  -DgroupId=org.unchiujar.android \
+  -DartifactId=unique.idea \
+  -Dversion=0.0.1-SNAPSHOT \
+  -DtargetSdkVersion=10 \
+  -DminSdkVersion=10 \
+  -DplatformVersion=2.3.3_r2
