@@ -1,5 +1,16 @@
+This project is an archetype for generating Maven style Android projects. The generated Android projects use
+logback-android and slf4j for logging.
 
-To generate a project run:
+To generate an Android project download the archetype:
+
+  git clone git://github.com/unchiujar/android-template-archetype.git
+  
+Install the archetype in the local repository
+
+  cd android-template-archetype
+  mvn install
+    
+And run the following substituting with the appropriate values:
 
 mvn archetype:generate \
   -DarchetypeGroupId=org.unchiujar.android \
@@ -15,7 +26,7 @@ mvn archetype:generate \
 
 There is an equivalence between the targeSdkVersion and the platformVersion
 
-minSdkVersion OR 
+minSdkVersion or 
 targetSdkVersion    |    platformVersion
 ----------------------------------------
       3                    1.5_r4
@@ -37,8 +48,7 @@ mvn archetype:generate \
   -DarchetypeGroupId=org.unchiujar.android \
   -DarchetypeArtifactId=android-template-archetype \
   -DarchetypeVersion=0.0.1-SNAPSHOT \
-  -DgroupId=org.unchiujar.android \
-  -DartifactId=unique.idea \
+  -DartifactId=awesomedidea \
   -Dversion=0.0.1-SNAPSHOT \
   -DtargetSdkVersion=10 \
   -DminSdkVersion=10 \

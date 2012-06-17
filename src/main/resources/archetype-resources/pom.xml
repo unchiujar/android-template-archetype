@@ -41,11 +41,8 @@
 				<version>3.2.0</version>
 				<configuration>
 					<sdk>
-						<platform>8</platform>
+						<platform>${targetSdkVersion}</platform>
 					</sdk>
-					<emulator>
-						<avd>em22</avd>
-					</emulator>
 				</configuration>
 				<extensions>true</extensions>
 			</plugin>
