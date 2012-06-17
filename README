@@ -1,11 +1,10 @@
-This project is an archetype for generating Maven style Android projects. The generated Android projects use
-logback-android and slf4j for logging.
+This project is an archetype for generating Maven style Android projects. The generated Android projects use logback-android and slf4j for logging.
 
 To generate an Android project download the archetype:
 
   git clone git://github.com/unchiujar/android-template-archetype.git
   
-Install the archetype in the local repository
+Install the archetype in the local repository:
 
   cd android-template-archetype
   mvn install
