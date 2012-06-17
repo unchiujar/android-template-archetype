@@ -1,4 +1,5 @@
-This project is an archetype for generating Maven style Android projects. The generated Android projects use logback-android and slf4j for logging.
+This project is an archetype for generating Maven style Android projects. The generated Android projects
+use logback-android and slf4j for logging.
 
 To generate an Android project download the archetype:
 
