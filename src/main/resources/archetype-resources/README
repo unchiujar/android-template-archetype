@@ -1,0 +1,7 @@
+
+
+Download or build  the logback-android  jar from https://github.com/tony19/logback-android
+and install it in the local repository by running
+
+  mvn install:install-file -Dfile=./logback-android-1.0.6-1.jar -DgroupId=logback -DartifactId=logback-android -Dversion=1.0.6-1 -Dpackaging=jar
+
